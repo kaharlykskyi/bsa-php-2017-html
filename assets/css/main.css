@@ -5,6 +5,10 @@ body {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 /*Header and Nav*/
 
 header > .logo-block {
@@ -99,10 +103,9 @@ nav ul ul ul {
 /* Left menu */
 
 aside {
+    float: left;
     width: 15%;
-    height: 900px;
     padding: 120px 10px;
-    border-right: 1px solid #eeeeee;
 }
 aside ul{
     list-style: none;
@@ -120,3 +123,107 @@ aside ul li a{
 
 /* Main content */
 
+section {
+    width: 85%;
+    float: right;
+    padding-top: 110px;
+}
+
+section .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+section .block {
+    width: 300px;
+    border: 1px dashed #a7a7a7;
+    margin: 15px;
+    padding: 15px;
+    overflow: auto;
+}
+
+section .block-notfixed {
+    border: 1px dashed #a7a7a7;
+    margin: 15px;
+    padding: 15px;
+}
+
+section .block-fixed {
+    width: 200px;
+    border: 1px dashed #a7a7a7;
+    margin: 15px;
+    padding: 15px;
+    overflow: auto;
+}
+.clearfix {
+    clear: both;
+}
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #7e7e7e;
+}
+
+footer .top {
+    margin: 5px 20px;
+    border-bottom: 1px solid #7e7e7e;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    padding: 10px 0;
+    list-style: none;
+}
+footer ul li a{
+    color: #222;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #575757;
+    text-decoration: underline;
+}
+
+footer .bottom {
+    margin: 20px 20px;
+}
+
+footer > .bottom > .left-links {
+    float: left;
+}
+
+.left-links > a {
+    padding: 20px;
+}
+.left-links > a:hover {
+    color: #575757;
+    text-decoration: underline;
+}
+
+footer > .bottom > .right-icons {
+    float: right;
+}
+
+footer .right-icons i{
+    margin: -10px 15px;
+}
+
+footer .fa-facebook-square {
+    color: #323aea;
+}
+
+footer .fa-twitter-square {
+    color: #3f86ea;
+}
+
+footer .fa-google-plus-square {
+    color: #ea3b22;
+}
